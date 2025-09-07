@@ -1,0 +1,29 @@
+dog = {"name": "Volty",
+       "Colour": "Black and White",
+       "Breed": "Alaskan Klee Kai",
+       "Age": "5"}
+
+student = {"first_name": "Chris",
+           "last_name": "Botty",
+           "gender": "Male",
+           "Age": "18",
+           "Marital status": "QWERTY",
+           "Skills": ["Python", "HTML", "CSS"],
+           "city": "IDK",
+           "address": "IDK"}
+
+print(len(student))
+
+print(student.get("Skills"))
+print(type(student.get("Skills")))
+student["Skills"].append("C++")
+student["Skills"].append("C#")
+print(student.get("Skills"))
+
+print(student.keys())
+print(student.values())
+
+print(student.items())
+
+del student["Marital status"]
+del student
