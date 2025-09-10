@@ -1,0 +1,39 @@
+grade = int(input("Enter your grade: "))
+
+if grade >= 49:
+    if grade >= 90:
+        print("A")
+    elif 70 <= grade <= 89:
+        print("B")
+    elif 60 <= grade <= 69:
+        print("C")
+    elif 50 <= grade <= 59:
+        print("D")
+else:
+    print("F")
+
+month = input("Enter a month: ")
+
+if month == "December" or month == "January" or month == "February":
+    print("The current season is: Winter❄️")
+elif month == "March" or month == "April" or month == "May":
+    print("The current season is: Spring🌸")
+elif month == "June" or month == "July" or month == "August":
+    print("The current season is: Summer🏊")
+elif month == "September" or month == "October" or month == "November":
+    print("The current season is: Autumn🍂")
+else:
+    print("Please enter a month")
+
+
+fruit = input("Enter a fruit: ").lower()
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+
+if fruit not in fruits:
+    fruits.append(fruit)
+    print(fruits)
+else:
+    print(f"{fruit} is already on the list")
+    print(fruits)
+
