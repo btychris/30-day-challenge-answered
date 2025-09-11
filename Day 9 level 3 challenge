@@ -1,0 +1,40 @@
+person = {
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+middle_index = len(person["skills"]) // 2
+
+if "skills" in person:
+    print(person['skills'][2])
+
+if "skills" in person:
+    if "Python" in person['skills']:
+        print("Python is on the list of skills")
+    else:
+        print("Python is not on the list")
+else:
+    print("There is no skills in dictionary")
+
+if "skills" in person:
+    if "JavaScript" in person['skills'] and "React" in person['skills']:
+        print('He is a front end developer')
+    elif "Node" in person['skills'] and "Python" in person['skills'] and "MongoDB" in person['skills']:
+        print('He is a backend developer')
+    elif "React" in person['skills'] and "Node" in person['skills'] and "MongoDB" in person['skills']:
+        print('He is a fullstack developer')
+    else:
+        print('unknown title')
+else:
+    print("There is no skills in dictionary")
+
+if "is_marred" in person and person["is_marred"] and person.get("country") == "Finland":
+    print(f"{person["first_name"]} {person["last_name"]} lives in {person["country"]}. He is married.")
