@@ -1,0 +1,15 @@
+count = 0
+for number in range(0, 101):
+    count += number
+
+print(f"The sum of all numbers is {count}.")
+
+odd_count = 0
+for number in range(1, 101, 2):
+    odd_count += number
+
+even_count = 0
+for number in range(0, 101, 2):
+    even_count += number
+
+print(f"The sum of all evens is {even_count}. And the sum of all odds is {odd_count}.")
